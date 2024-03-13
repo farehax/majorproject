@@ -10,6 +10,7 @@ const listingSchema = new Schema({
     description:String,
     image:{
         type:String,
+        default:"https://unsplash.com/photos/a-group-of-pink-flowers-YCfL5hfYD8s",
         set:(v) => v ==="" ? "https://unsplash.com/photos/a-group-of-pink-flowers-YCfL5hfYD8s" : v,
     },
     price:Number,
@@ -18,4 +19,4 @@ const listingSchema = new Schema({
 })
 
 const listing = mongoose.model("listing", listingSchema);
-module.export = listing;
+module.exports = listing;

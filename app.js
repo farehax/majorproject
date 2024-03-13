@@ -19,7 +19,7 @@ app.get("/",(req,res)=>{
     res.send("hii, i'm root"); 
 });
 app.get("/testlisting",async (req,res) =>{
-    let samplelisting = new listing({
+    let samplelisting = new Listing({
         title: "my new villa",
         description:"by the beach",
         price: 1200,
