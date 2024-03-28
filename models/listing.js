@@ -9,7 +9,7 @@ const listingSchema = new Schema({
     },
     description:String,
     image:{
-        type:String,
+        type:Object,
         default:"https://unsplash.com/photos/a-group-of-pink-flowers-YCfL5hfYD8s",
         set:(v) => v ==="" ? "https://unsplash.com/photos/a-group-of-pink-flowers-YCfL5hfYD8s" : v,
     },
